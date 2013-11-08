@@ -6,7 +6,7 @@ This Repo contains some useful help on getting a fresh install of Sublime Text s
 
 First you need to install the sublime package controller which you can get from [https://sublime.wbond.net/](https://sublime.wbond.net/).
 
-When this is done it should be relatively simple to install the following packages by pressing `ALT` + `SHIFT` + `P` and typing `install package`. 
+When this is done it should be relatively simple to install the following packages by pressing `CMD` + `SHIFT` + `P` and typing `install package`. 
 
 #### Installed Packages:
 
