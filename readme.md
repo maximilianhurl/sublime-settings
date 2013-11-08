@@ -15,12 +15,13 @@ When this is done it should be relatively simple to install the following packag
     "Package Control",
     "SideBarEnhancements",
     "SublimeLinter",
-    "Theme - Soda"
+    "Theme - Soda",
+    "SublimeCodeIntel"
     
 
 ## Step 2 - Sublime settings
 
-After you have installed all the packages you can add in your settings
+After you have installed all the packages you can add in your preferences -> settings - user
 
 #### Settings User:
 
