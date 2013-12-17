@@ -12,7 +12,6 @@ When this is done it should be relatively simple to install the following packag
 
     "Dayle Rees Color Schemes",
     "LESS",
-    "Package Control",
     "SideBarEnhancements",
     "SublimeLinter",
     "Theme - Soda",
