@@ -15,6 +15,7 @@ When this is done it should be relatively simple to install the following packag
     "SideBarEnhancements",
     "SublimeLinter",
     "Theme - Soda",
+    'Theme - itg.flat',
     "SublimeCodeIntel"
     
 
@@ -39,7 +40,7 @@ After you have installed all the packages you can add in your preferences -> set
 		],
 		"open_files_in_new_window": false,
 		"tab_size": 4,
-		"theme": "Soda Dark.sublime-theme",
+		"theme": "itg.flat.dark.sublime-theme",
 		"translate_tabs_to_spaces": true,
 		"trim_trailing_white_space_on_save": true
 	}
