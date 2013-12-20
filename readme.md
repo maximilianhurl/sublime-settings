@@ -106,15 +106,15 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
     }
 }
 
-## Step 2 - Install Linters
+## Step 3 - Install Linters
 
-Linters now need to be installed using NPM (globally).
+Linters now need to be installed using NPM (globally). The list of available linters [https://github.com/SublimeLinter](https://github.com/SublimeLinter).
 
-List of available linters [https://github.com/SublimeLinter](https://github.com/SublimeLinter)
+Linters that should be installed:
 
 - Flake8
 
 	
-## Step 3 - Install snippets
+## Step 4 - Install snippets
 
 See the snippets directory for more information
