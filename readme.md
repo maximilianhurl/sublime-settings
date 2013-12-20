@@ -65,23 +65,55 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
 #### Sublime linter settings user
 
 	{
-	    "sublimelinter": true,
-	    "sublimelinter_popup_errors_on_save": false,
-	    "sublimelinter_delay": 0,
-	    "sublimelinter_mark_style": "outline",
-	    "javascript_linter": "jslint",
-	    "jslint_options":
-	    {
-	        "browser": true,
-	        "devel": true
-	    },
-	    "pep8_ignore":
-	    [
-	        "E501",
-	        "E128"
-	    ]
-	}
-	
+    "user": {
+        "debug": false,
+        "delay": 0.2,
+        "error_color": "D02000",
+        "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default.gutter-theme",
+        "gutter_theme_excludes": [],
+        "lint_mode": "background",
+        "linters": {
+            "flake8": {
+                "@disable": false,
+                "args": [],
+                "excludes": [],
+                "ignore": "E501,E128",
+                "max-complexity": -1,
+                "max-line-length": null,
+                "select": ""
+            }
+        },
+        "mark_style": "outline",
+        "paths": {
+            "*": [],
+            "linux": [],
+            "osx": [],
+            "windows": []
+        },
+        "python_paths": {
+            "linux": [],
+            "osx": [],
+            "windows": []
+        },
+        "rc_search_limit": 3,
+        "show_errors_on_save": false,
+        "show_marks_in_minimap": true,
+        "syntax_map": {
+            "php": "html"
+        },
+        "warning_color": "DDB700",
+        "wrap_find": true
+    }
+}
+
+## Step 2 - Install Linters
+
+Linters now need to be installed using NPM (globally).
+
+List of available linters [https://github.com/SublimeLinter](https://github.com/SublimeLinter)
+
+- Flake8
+
 	
 ## Step 3 - Install snippets
 
