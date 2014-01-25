@@ -6,7 +6,7 @@ This Repo contains some useful help on getting a fresh install of Sublime Text s
 
 First you need to install the sublime package controller which you can get from [https://sublime.wbond.net/](https://sublime.wbond.net/).
 
-When this is done it should be relatively simple to install the following packages by pressing `CMD` + `SHIFT` + `P` and typing `install package`. 
+When this is done it should be relatively simple to install the following packages by pressing `CMD` + `SHIFT` + `P` and typing `install package`.
 
 #### Installed Packages:
 
@@ -17,7 +17,7 @@ When this is done it should be relatively simple to install the following packag
     "Theme - Soda",
     'Theme - itg.flat',
     "SublimeCodeIntel"
-    
+
 
 ## Step 2 - Sublime settings
 
@@ -54,7 +54,7 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
 	    "tab_size": 4,
 	    "trim_automatic_white_space": true,
 	    "trim_trailing_white_space_on_save": true,
-	
+
 	    "pep8_ignore":
 	    [
 	        "E501",
@@ -65,56 +65,75 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
 #### Sublime linter settings user
 
 	{
-    "user": {
-        "debug": false,
-        "delay": 0.2,
-        "error_color": "D02000",
-        "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default.gutter-theme",
-        "gutter_theme_excludes": [],
-        "lint_mode": "background",
-        "linters": {
-            "flake8": {
-                "@disable": false,
-                "args": [],
-                "excludes": [],
-                "ignore": "E501,E128",
-                "max-complexity": -1,
-                "max-line-length": null,
-                "select": ""
-            }
-        },
-        "mark_style": "outline",
-        "paths": {
-            "*": [],
-            "linux": [],
-            "osx": [],
-            "windows": []
-        },
-        "python_paths": {
-            "linux": [],
-            "osx": [],
-            "windows": []
-        },
-        "rc_search_limit": 3,
-        "show_errors_on_save": false,
-        "show_marks_in_minimap": true,
-        "syntax_map": {
-            "php": "html"
-        },
-        "warning_color": "DDB700",
-        "wrap_find": true
+        "user": {
+            "debug": false,
+            "delay": 0.2,
+            "error_color": "D02000",
+            "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default.gutter-theme",
+            "gutter_theme_excludes": [],
+            "lint_mode": "background",
+            "linters": {
+                "csslint": {
+                    "@disable": false,
+                    "args": [],
+                    "errors": "",
+                    "excludes": [],
+                    "ignore": "",
+                    "warnings": ""
+                },
+                "flake8": {
+                    "@disable": false,
+                    "args": [],
+                    "builtins": "",
+                    "excludes": [],
+                    "ignore": "E501,E128",
+                    "max-complexity": -1,
+                    "max-line-length": null,
+                    "select": ""
+                },
+                "jshint": {
+                    "@disable": false,
+                    "args": [],
+                    "errors": "",
+                    "excludes": [],
+                    "ignore": "",
+                    "warnings": ""
+                },
+            },
+            "mark_style": "outline",
+            "paths": {
+                "*": [],
+                "linux": [],
+                "osx": [],
+                "windows": []
+            },
+            "python_paths": {
+                "linux": [],
+                "osx": [],
+                "windows": []
+            },
+            "rc_search_limit": 3,
+            "show_errors_on_save": false,
+            "show_marks_in_minimap": true,
+            "syntax_map": {
+                "php": "html"
+            },
+            "warning_color": "DDB700",
+            "wrap_find": true
+        }
     }
-}
 
 ## Step 3 - Install Linters
 
 Linters now need to be installed using NPM (globally). The list of available linters [https://github.com/SublimeLinter](https://github.com/SublimeLinter).
 
-Linters that should be installed:
+Linters that should be installed (See attached URL for details on installtion process):
 
-- Flake8
+- Flake8 - [https://github.com/SublimeLinter/SublimeLinter-flake8](https://github.com/SublimeLinter/SublimeLinter-flake8)
+- jshint - [https://github.com/SublimeLinter/SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
+- csslint - [https://github.com/SublimeLinter/SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)
 
-	
+
 ## Step 4 - Install snippets
 
 See the snippets directory for more information
