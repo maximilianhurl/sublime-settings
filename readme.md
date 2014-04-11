@@ -14,6 +14,7 @@ When this is done it should be relatively simple to install the following packag
     "LESS",
     "SideBarEnhancements",
     "SublimeLinter",
+    "MarkdownEditing",
     "Theme - Soda",
     'Theme - Spacegray',
     "SublimeCodeIntel"
