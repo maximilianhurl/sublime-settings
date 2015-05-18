@@ -17,7 +17,8 @@ When this is done it should be relatively simple to install the following packag
     "MarkdownEditing",
     "Theme - Soda",
     'Theme - Spacegray',
-    "SublimeCodeIntel"
+    "SublimeCodeIntel",
+    'Babel'
 
 
 ## Step 2 - Sublime settings
