@@ -66,7 +66,7 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
 
 #### Sublime linter settings user
 
-	{
+    {
         "user": {
             "debug": false,
             "delay": 0.2,
@@ -89,20 +89,16 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
                     "builtins": "",
                     "excludes": [],
                     "ignore": "E501,E128",
+                    "jobs": "1",
                     "max-complexity": -1,
                     "max-line-length": null,
-                    "select": ""
-                },
-                "jshint": {
-                    "@disable": false,
-                    "args": [],
-                    "errors": "",
-                    "excludes": [],
-                    "ignore": "",
-                    "warnings": ""
+                    "select": "",
+                    "show-code": false
                 },
             },
             "mark_style": "outline",
+            "no_column_highlights_line": false,
+            "passive_warnings": false,
             "paths": {
                 "*": [],
                 "linux": [],
@@ -115,10 +111,15 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
                 "windows": []
             },
             "rc_search_limit": 3,
+            "shell_timeout": 10,
             "show_errors_on_save": false,
             "show_marks_in_minimap": true,
             "syntax_map": {
-                "php": "html"
+                "html (django)": "html",
+                "html (rails)": "html",
+                "html 5": "html",
+                "php": "html",
+                "python django": "python"
             },
             "warning_color": "DDB700",
             "wrap_find": true
@@ -132,10 +133,21 @@ Linters now need to be installed using NPM (globally). The list of available lin
 Linters that should be installed (See attached URL for details on installtion process):
 
 - Flake8 - [https://github.com/SublimeLinter/SublimeLinter-flake8](https://github.com/SublimeLinter/SublimeLinter-flake8)
-- jshint - [https://github.com/SublimeLinter/SublimeLinter-jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)
 - csslint - [https://github.com/SublimeLinter/SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)
 
 
 ## Step 4 - Install snippets
 
 See the snippets directory for more information
+
+
+## Step 5 - Enable babel syntax highlighting for ES6 + React stuff
+
+Setting as the default syntax
+
+To set it as the default syntax for a particular extension:
+
+Open a file with that extension,
+Select View from the menu,
+Then Syntax -> Open all with current extension as... -> Babel -> JavaScript (Babel).
+Repeat this for each extension (e.g.: .js and .jsx).
