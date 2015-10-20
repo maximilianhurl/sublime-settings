@@ -134,6 +134,7 @@ Linters that should be installed (See attached URL for details on installtion pr
 
 - Flake8 - [https://github.com/SublimeLinter/SublimeLinter-flake8](https://github.com/SublimeLinter/SublimeLinter-flake8)
 - csslint - [https://github.com/SublimeLinter/SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)
+- eslint - [https://github.com/roadhump/SublimeLinter-eslint](https://github.com/roadhump/SublimeLinter-eslint)
 
 
 ## Step 4 - Install snippets
