@@ -64,6 +64,19 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
 	    ]
 	}
 
+#### Settings JS
+
+	{
+    	"rulers": [120],
+    	"tab_size": 4,
+		"extensions":
+		[
+			"js"
+		]
+	}
+
+
+
 #### Sublime linter settings user
 
     {
