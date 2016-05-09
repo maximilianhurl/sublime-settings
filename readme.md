@@ -16,9 +16,10 @@ When this is done it should be relatively simple to install the following packag
     "SublimeLinter",
     "MarkdownEditing",
     "Theme - Soda",
-    'Theme - Spacegray',
-    "SublimeCodeIntel",
-    'Babel'
+    "Theme - Spacegray",
+    "Babel",
+    "GitGutter",
+    "Djaneiro"
 
 
 ## Step 2 - Sublime settings
