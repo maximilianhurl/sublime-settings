@@ -150,6 +150,11 @@ Linters that should be installed (See attached URL for details on installtion pr
 - csslint - [https://github.com/SublimeLinter/SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)
 - eslint - [https://github.com/roadhump/SublimeLinter-eslint](https://github.com/roadhump/SublimeLinter-eslint)
 
+Dont forget to install flake8 and pyflakes for Python 3:
+
+	sudo pip3 install flake8 --upgrade
+	sudo pip3 install pyflakes --upgrade
+
 
 ## Step 4 - Install snippets
 
