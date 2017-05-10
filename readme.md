@@ -19,7 +19,8 @@ When this is done it should be relatively simple to install the following packag
     "Theme - Spacegray",
     "Babel",
     "GitGutter",
-    "Djaneiro"
+    "MagicPython",
+    "CSSEdit Group support"
 
 
 ## Step 2 - Sublime settings
@@ -97,18 +98,37 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
                     "ignore": "",
                     "warnings": ""
                 },
+                "eslint": {
+                    "@disable": false,
+                    "args": [],
+                    "excludes": []
+                },
                 "flake8": {
                     "@disable": false,
                     "args": [],
                     "builtins": "",
+                    "ecmaFeatures": {
+                        "jsx": true,
+                        "modules": true
+                    },
                     "excludes": [],
+                    "executable": "",
                     "ignore": "E501,E128",
                     "jobs": "1",
-                    "max-complexity": -1,
+                    "max-complexity": 8,
                     "max-line-length": null,
                     "select": "",
-                    "show-code": false
+                    "show-code": false,
+                    "syntax_map": {
+                        "JavaScript (Babel)": "javascript"
+                    }
                 },
+                "pyflakes": {
+                    "@disable": false,
+                    "@python": "3.5",
+                    "args": [],
+                    "excludes": []
+                }
             },
             "mark_style": "outline",
             "no_column_highlights_line": false,
@@ -133,8 +153,13 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
                 "html (rails)": "html",
                 "html 5": "html",
                 "php": "html",
-                "python django": "python"
+                "python django": "python",
+                "MagicPython": "python",
             },
+            "tooltip_fontsize": "1rem",
+            "tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",
+            "tooltip_theme_excludes": [],
+            "tooltips": false,
             "warning_color": "DDB700",
             "wrap_find": true
         }
@@ -147,6 +172,7 @@ Linters now need to be installed using NPM (globally). The list of available lin
 Linters that should be installed (See attached URL for details on installtion process):
 
 - Flake8 - [https://github.com/SublimeLinter/SublimeLinter-flake8](https://github.com/SublimeLinter/SublimeLinter-flake8)
+- PyFlakes - [https://github.com/SublimeLinter/SublimeLinter-pyflakes](https://github.com/SublimeLinter/SublimeLinter-pyflakes)
 - csslint - [https://github.com/SublimeLinter/SublimeLinter-csslint](https://github.com/SublimeLinter/SublimeLinter-csslint)
 - eslint - [https://github.com/roadhump/SublimeLinter-eslint](https://github.com/roadhump/SublimeLinter-eslint)
 
@@ -154,6 +180,7 @@ Dont forget to install flake8 and pyflakes for Python 3:
 
 	sudo pip3 install flake8 --upgrade
 	sudo pip3 install pyflakes --upgrade
+    sudo pip3 install mccabe --upgrade
 
 
 ## Step 4 - Install snippets
