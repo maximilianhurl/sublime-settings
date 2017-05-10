@@ -118,10 +118,7 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
                     "max-complexity": 8,
                     "max-line-length": null,
                     "select": "",
-                    "show-code": false,
-                    "syntax_map": {
-                        "JavaScript (Babel)": "javascript"
-                    }
+                    "show-code": false
                 },
                 "pyflakes": {
                     "@disable": false,
@@ -149,12 +146,11 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
             "show_errors_on_save": false,
             "show_marks_in_minimap": true,
             "syntax_map": {
+                "magicpython": "python",
                 "html (django)": "html",
                 "html (rails)": "html",
                 "html 5": "html",
-                "php": "html",
-                "python django": "python",
-                "MagicPython": "python",
+                "php": "html"
             },
             "tooltip_fontsize": "1rem",
             "tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",
