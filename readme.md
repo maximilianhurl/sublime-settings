@@ -11,7 +11,6 @@ When this is done it should be relatively simple to install the following packag
 #### Installed Packages:
 
     "Dayle Rees Color Schemes",
-    "LESS",
     "SideBarEnhancements",
     "SublimeLinter",
     "MarkdownEditing",
@@ -20,7 +19,8 @@ When this is done it should be relatively simple to install the following packag
     "Babel",
     "GitGutter",
     "MagicPython",
-    "CSSEdit Group support"
+    "TOML",
+    "Dockerfile Syntax Highlighting"
 
 
 ## Step 2 - Sublime settings
@@ -29,25 +29,29 @@ After you have installed all the packages you can add in your preferences -> set
 
 #### Settings User:
 
-	{
-		"color_scheme": "Packages/Dayle Rees Color Schemes/Peacock.tmTheme",
-		"font_face": "Menlo",
-		"font_options":
-		[
-			"no_round"
-		],
-		"font_size": 12.0,
-		"highlight_line": true,
-		"ignored_packages":
-		[
-			"Vintage"
-		],
-		"open_files_in_new_window": false,
-		"tab_size": 4,
-		"theme": "Spacegray.sublime-theme",
-		"translate_tabs_to_spaces": true,
-		"trim_trailing_white_space_on_save": true
-	}
+```
+{
+    "color_scheme": "Packages/User/base16-ocean.dark (SL) (Flake8Lint).tmTheme",
+    "font_face": "Menlo",
+    "font_options":
+    [
+        "no_round"
+    ],
+    "font_size": 14.0,
+    "highlight_line": true,
+    "ignored_packages":
+    [
+        "Markdown",
+        "Vintage"
+    ],
+    "open_files_in_new_window": false,
+    "tab_size": 4,
+    "theme": "Spacegray.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
+}
+```
+
 
 To install the colour scheme you need to select `Preferences -> Browse Packages` then download the colour scheme set from [https://github.com/daylerees/colour-schemes](https://github.com/daylerees/colour-schemes) into that directory.
 
@@ -68,98 +72,99 @@ To install the colour scheme you need to select `Preferences -> Browse Packages`
 
 #### Settings JS
 
-	{
-    	"rulers": [120],
-    	"tab_size": 4,
-		"extensions":
-		[
-			"js"
-		]
-	}
+```
+{
+    "rulers": [100],
+    "tab_size": 2,
+    "extensions":
+    [
+        "js"
+    ]
+}
+```
 
 
 
 #### Sublime linter settings user
 
-    {
-        "user": {
-            "debug": false,
-            "delay": 0.2,
-            "error_color": "D02000",
-            "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default.gutter-theme",
-            "gutter_theme_excludes": [],
-            "lint_mode": "background",
-            "linters": {
-                "csslint": {
-                    "@disable": false,
-                    "args": [],
-                    "errors": "",
-                    "excludes": [],
-                    "ignore": "",
-                    "warnings": ""
-                },
-                "eslint": {
-                    "@disable": false,
-                    "args": [],
-                    "excludes": []
-                },
-                "flake8": {
-                    "@disable": false,
-                    "args": [],
-                    "builtins": "",
-                    "ecmaFeatures": {
-                        "jsx": true,
-                        "modules": true
-                    },
-                    "excludes": [],
-                    "executable": "",
-                    "ignore": "E501,E128",
-                    "jobs": "1",
-                    "max-complexity": 8,
-                    "max-line-length": null,
-                    "select": "",
-                    "show-code": false
-                },
-                "pyflakes": {
-                    "@disable": false,
-                    "@python": "3.5",
-                    "args": [],
-                    "excludes": []
-                }
+```
+{
+    "debug": false,
+    "delay": 0.25,
+    "lint_mode": "background",
+    //"gutter_theme": "Packages/SublimeLinter/gutter-themes/Blueberry/cross/Blueberry - cross.gutter-theme",
+    "gutter_theme": "Default",
+    "styles": [{
+        "mark_style": "outline",
+        "priority": 1,
+        "scope": "sublimelinter.mark.warning",
+        "icon": "triangle",
+        "types": [
+            "warning"
+        ]
+    }, {
+        "mark_style": "fill",
+        "priority": 0,
+        "scope": "sublimelinter.mark.error",
+        "icon": "x",
+        "types": [
+            "error"
+        ]
+    }],
+    "linters": {
+        "eslint": {
+            "@disable": false,
+            "args": [],
+            "excludes": [],
+            "env": {"PATH":"/usr/local/bin/"}
+        },
+        "flake8": {
+            "executable": "/usr/local/bin/flake8",
+            "@disable": false,
+            "args": [
+                "--ignore=E501,E512"
+            ],
+            "builtins": "",
+            "ecmaFeatures": {
+                "jsx": true,
+                "modules": true
             },
-            "mark_style": "outline",
-            "no_column_highlights_line": false,
-            "passive_warnings": false,
-            "paths": {
-                "*": [],
-                "linux": [],
-                "osx": [],
-                "windows": []
-            },
-            "python_paths": {
-                "linux": [],
-                "osx": [],
-                "windows": []
-            },
-            "rc_search_limit": 3,
-            "shell_timeout": 10,
-            "show_errors_on_save": false,
-            "show_marks_in_minimap": true,
-            "syntax_map": {
-                "magicpython": "python",
-                "html (django)": "html",
-                "html (rails)": "html",
-                "html 5": "html",
-                "php": "html"
-            },
-            "tooltip_fontsize": "1rem",
-            "tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",
-            "tooltip_theme_excludes": [],
-            "tooltips": false,
-            "warning_color": "DDB700",
-            "wrap_find": true
+            "excludes": [],
+            "ignore_match": [
+                "E501",
+                "E512"
+            ],
+            "jobs": "1",
+            "max-complexity": 8,
+            "max-line-length": null,
+            "select": "",
+            "show-code": false
+        },
+        "pylint": {
+            "executable": "/usr/local/bin/pylint",
+            "args": [],
+            "excludes": [],
+            "ignore_match": [
+                "D100",
+            ],
+            "rcfile": "",
+            "show-codes": false
         }
+    },
+    "no_column_highlights_line": false,
+    "show_marks_in_minimap": true,
+    "syntax_map": {
+        "html (django)": "html",
+        "html (rails)": "html",
+        "html 5": "html",
+        "javascript (babel)": "javascript",
+        "magicpython": "python",
+        "php": "html",
+        "python django": "python",
+        "pythonimproved": "python"
     }
+}
+```
 
 ## Step 3 - Install Linters
 
